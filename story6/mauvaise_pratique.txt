@@ -1,0 +1,19 @@
+Finding 1 — Certificate pinning affaibli
+
+Le composant PinningTrustManager utilise SHA-1 pour vérifier les pins, ce qui est une mauvaise pratique de sécurité
+En plus, si les pins sont trop anciens, le code revient à la confiance système, ce qui réduit la protection du pinning
+
+Finding 2 — Credentials renvoyés en clair
+
+Dans KeychainModule, le username et le password sont déchiffrés puis renvoyés en clair dans une WritableMap
+Cela augmente l’exposition des secrets en mémoire et entre la couche native Android et la couche React Native
+
+Finding 3 — Stockage local dans SharedPreferences
+
+Dans PrefsStorage, les identifiants sont stockés dans SharedPreferences avec un encodage Base64
+Base64 n’est pas un chiffrement, donc la sécurité dépend entièrement de la couche de chiffrement utilisée avant le stockage
+
+Finding 4 — Persistance des cookies
+
+ForwardingCookieHandler lit, écrit et sauvegarde les cookies avec CookieManager
+Si ces cookies contiennent des informations de session, leur conservation locale augmente la surface d’exposition côté client
