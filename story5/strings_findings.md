@@ -1,0 +1,15 @@
+    <string name="ACCOUNT_ENDPOINT">https://api.nickel.eu/customer-banking-api</string>
+    <string name="CUSTOMER_AUTHENTICATION_ENDPOINT">https://api.nickel.eu/customer-authentication-api</string>
+    <string name="ENVIRONMENT">production</string>
+    <string name="GCM_PROJECT_NUMBER">246766419677</string>
+    <string name="PERSONAL_SPACE_API_ENDPOINT">https://api.nickel.eu/personal-space-api</string>
+    <string name="PUSHWOOSH_APPID">DDF11-D1BF9</string>
+    <string name="build_config_package">com.fpe.comptenickel</string>
+    <string name="com.crashlytics.android.build_id">9ad6d741-4e10-4abd-9f12-163a0e3fb0b2</string>
+    <string name="default_web_client_id">717748501407-v621tmfvqd7etdouc3df5vuv31scle0g.apps.googleusercontent.com</string>
+    <string name="firebase_database_url">https://application-client-nickel.firebaseio.com</string>
+    <string name="gcm_defaultSenderId">717748501407</string>
+    <string name="google_api_key">AIzaSyBTgztvImsUfMWDa41PCrDWAj7dmyIDhUg</string>
+    <string name="google_app_id">1:717748501407:android:e0cdeb712e27275d</string>
+    <string name="google_crash_reporting_api_key">AIzaSyBTgztvImsUfMWDa41PCrDWAj7dmyIDhUg</string>
+    <string name="google_storage_bucket">application-client-nickel.appspot.com</string>
